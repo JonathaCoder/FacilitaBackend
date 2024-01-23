@@ -1,21 +1,19 @@
 const express = require("express");
 
-const allTodos = [{ nome: "aaaa", email: "teste", telefone:"12313132"}];
+const allTodos = [{ nome: "aaaa", email: "teste", telefone: "12313132" }];
 const todosRoutes = express.Router();
 const { PrismaClient } = require("@prisma/client");
-
 
 const prisma = new PrismaClient();
 
 // C
 todosRoutes.post("/todos", async (request, response) => {
-  const { email,name,telefone} = request.body;
+  const { email, name, telefone } = request.body;
   const todo = await prisma.client.create({
     data: {
       email,
       name,
-      telefone
-    
+      telefone,
     },
   });
 
@@ -29,7 +27,7 @@ todosRoutes.get("/todos", async (request, response) => {
 // U
 
 todosRoutes.put("/todos", async (request, response) => {
-  const { name, id, email,telefone} = request.body;
+  const { name, id, email, telefone } = request.body;
 
   if (!id) {
     return response.status(400).json("Id is mandatory");

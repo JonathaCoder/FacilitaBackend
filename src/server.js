@@ -1,11 +1,11 @@
 const express = require("express");
 const cors = require("cors");
-const todosRoutes = require("./routes/allRoutes")
+const allRoutes = require("./routes/allRoutes")
 const app = express();
 
 app.use(express.json());
 app.use(cors());
-app.use(todosRoutes);
+app.use(allRoutes);
 
 function teste(request, response) {
   return response.json("Run");

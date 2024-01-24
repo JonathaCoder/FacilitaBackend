@@ -11,8 +11,9 @@ npm install Prisma
 
 npx prisma init
 
-
+<div style="height:10vh;">
 ![Logo Postgres](https://github.com/JonathaCoder/FacilitaBackend/assets/123656886/c558d7fa-6f7f-4f8d-a723-7f254b5b631e)
+</div>
 <h1>table banco postgres:</h1>
 
 ![postgres image](https://github.com/JonathaCoder/FacilitaBackend/assets/123656886/7f0058df-6ff2-4345-9064-71b416c235e3)

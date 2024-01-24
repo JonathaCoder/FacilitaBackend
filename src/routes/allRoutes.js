@@ -1,6 +1,6 @@
 const express = require("express");
 
-const allTodos = [{ nome: "aaaa", email: "teste", telefone: "12313132" }];
+const allTodos = [{ nome: "aa", email: "test", telefone: "12313132" }];
 const todosRoutes = express.Router();
 const { PrismaClient } = require("@prisma/client");
 

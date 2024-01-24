@@ -14,4 +14,4 @@ npx prisma init
 
 table banco postgres:
 
-![banco](https://github.com/JonathaCoder/FacilitaBackend/assets/123656886/f166bfaa-14eb-4539-ba7d-3c334b4f9e0a)
+![postgres image](https://github.com/JonathaCoder/FacilitaBackend/assets/123656886/7f0058df-6ff2-4345-9064-71b416c235e3)
